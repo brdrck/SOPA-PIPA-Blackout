@@ -1,3 +1,8 @@
+<?php
+header('HTTP/1.1 503 Service Temporarily Unavailable');
+header('Status: 503 Service Temporarily Unavailable');
+?>
+
 <!DOCTYPE html>
 
 <html id="<?=$htmlID;?>" class="<?=($status !== 0)?'iphone':'desktop';?>">
