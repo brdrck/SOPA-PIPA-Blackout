@@ -29,20 +29,5 @@
 		<b>could be blocked</b> if it passes</p>
 		<a href="http://americancensorship.org">Take action now!</a>
 	</div>
-
-	
-	<script type="text/javascript">
-		var _gauges = _gauges || [];
-		(function() {
-		var t   = document.createElement('script');
-		t.type  = 'text/javascript';
-		t.async = true;
-		t.id    = 'gauges-tracker';
-		t.setAttribute('data-site-id', '4f15f64acb25bc723500000a');
-		t.src = '//secure.gaug.es/track.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(t, s);
-		})();
-	</script>
 </body>
 </html>
