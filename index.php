@@ -1,9 +1,12 @@
-<?php
-header('HTTP/1.1 503 Service Temporarily Unavailable');
-header('Status: 503 Service Temporarily Unavailable');
-?>
-
 <!DOCTYPE html>
+
+<?php 
+$status = 0;
+
+if (strpos(strtolower($_SERVER['HTTP_USER_AGENT']),"iphone") || strpos(strtolower($_SERVER['HTTP_USER_AGENT']),"ipod") || strpos(strtolower($_SERVER['HTTP_USER_AGENT']),"ipad")) {
+      $status = (strpos(strtolower($_SERVER['HTTP_USER_AGENT']),"safari")) ? 1 : 2;
+}
+?>
 
 <html id="<?=$htmlID;?>" class="<?=($status !== 0)?'iphone':'desktop';?>">
 <head>
@@ -27,6 +30,19 @@ header('Status: 503 Service Temporarily Unavailable');
 	    window.onload = function() {
 	        setTimeout(function() { window.scrollTo(0, 1) }, 100);
 	    }
+	    
+	    $(function() {
+	    	var thisLocation = document.location.toString();
+	    	if (thisLocation.match('#')) {
+	    		var myAnchor = thisLocation.split('#')[1];
+	    		
+	    		if(myAnchor == "learnmore") {
+	    			$('html').addClass('article');
+	    			$('a.learnmore').hide();
+	    			$('#learnmore').show();
+	    		}
+	    	}
+	    });
 	</script>
 </head>
 <body>
