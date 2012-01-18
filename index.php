@@ -15,6 +15,10 @@ header('Status: 503 Service Temporarily Unavailable');
 	<link rel="shortcut icon" href="_/images/favicon.ico">
 	<link rel="apple-touch-icon-precomposed" href="_/images/ios-icon.png">
 	<link rel="apple-touch-startup-image" href="_/images/ios-splash.jpg" />  
+	 
+	<meta property="og:title" content="Stop American Censorship!" /> 
+	<meta property="og:description" content="Congress is considering a law that would censor the web. Sites you use every day could be blocked if it passes." /> 
+	<meta property="og:image" content="http://brdrck.me/sopa/_/images/facebook.jpg" />
 	
 	<link rel="stylesheet" href="_/styles/main.css" type="text/css">
 	
